@@ -51,7 +51,7 @@ Choose **Add coordinator**, enter its name and its new **Section name**, and opt
 
 **Rellva Auto** and **Digital Auto** beside the Office filters generate and run eligible project tasks in finite batches using each worker’s existing task limit. Workers without a goal, already busy, or waiting for input are skipped. Turning a switch **Off** prevents new auto tasks after the current task finishes. These switches do not change Codex schedules and appear only on your own floor.
 
-On the floor, **Show processes** opens one live feed across your workers: the current command or tool step, its worker and its reported status. Search or filter the feed. Use Commands & logs for original details; Close or Escape returns to the feed. Activity shows the three newest finished processes, including reported failures. It rolls forward as work finishes, without scrolling or growing the page. Generated project tasks remain in each worker’s Tasks tab. Select a worker to chat directly.
+On the floor, **Show processes** opens one live feed across your workers: each active worker’s current activity and any running command or tool step. Search or filter the feed. Use Commands & logs for original details; Close or Escape returns to the feed. Activity shows the three newest finished processes, including reported failures. It rolls forward as work finishes, without scrolling or growing the page. Generated project tasks remain in each worker’s Tasks tab. Select a worker to chat directly.
 
 Draft messages and selected attachments stay with their worker while you switch rooms in the app. **Load older messages** retrieves more saved history. During a task started in Rellva, **Send update** adds instructions to that same running task and pauses any next automatic task; it does not start another turn. Answer pending approval first.
 
@@ -123,3 +123,6 @@ Shared floors show selected worker names and activity. Conversation excerpts are
 This preview uses **local Codex chats**; it does not import every cloud-only ChatGPT conversation. If another active session owns a chat, finish its work and fully quit that source app before continuing the chat in Rellva, or create a separate worker.
 
 The installed app checks for updates. You can also choose **Settings → Check for updates**. Shared floors require the participating apps to remain open; persistent building accounts are not included.
+
+
+**Settings → Usage safeguard:** choose Off or 0%, 25%, 50%, 75% or 100% allowance remaining. Rellva stops its automatic planning, queues and running automatic tasks at or below the threshold reported by Codex. It also stops automatic work if limits cannot be checked. Manual work remains available. Stopped queues require an explicit restart; native Codex schedules are unchanged. Reported limits can lag.
