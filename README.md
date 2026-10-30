@@ -37,7 +37,7 @@ Keep Rellva open while sharing your floor. Keep the invitation private; anyone w
 
 ## Workers and projects
 
-Coordinators have their own grid. Each department uses a separate grid, while shared aisles show communication between rooms.
+Coordinators and each department have their own connecting light-rail network for messages between offices.
 
 Choose **Add worker** to use a saved chat or create a worker and select its project folder. Select a room to open its worker and message box. The compact **Workers** dropdown searches the current floor’s workers without occupying the bottom of the office. **Back** returns to the floor.
 
@@ -61,6 +61,8 @@ Scheduled Codex tasks appear in the owning worker’s terminal with their enable
 Small helper bots appear when the local runtime reports active child agents. Up to six are shown; an unknown or unavailable count does not create pretend helpers.
 
 ## Work levels
+
+Each room's XP bar sits directly below its monitor, above the floor.
 
 Workers gain 10 XP per recorded owner-message/reply pair, 1 XP per successfully finished tool step, and 20 XP per completed Rellva task. Level 1 starts at zero XP; each level starts at `50 × (level − 1)²` total XP. Existing local history is counted automatically in bounded, cached passes. New workers may show Calculating level while their initial scan finishes. Friends see only numeric level and XP values. Levels measure recorded activity; they do not measure intelligence or model quality. No extra setup is required.
 
