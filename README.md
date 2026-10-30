@@ -37,7 +37,7 @@ Keep Rellva open while sharing your floor. Keep the invitation private; anyone w
 
 ## Workers and projects
 
-Coordinators and each department have their own connecting light-rail network for messages between offices.
+Coordinators and each department have their own office light-rail network, connected by a shared hallway rail for messages between sections.
 
 Choose **Add worker** to use a saved chat or create a worker and select its project folder. Select a room to open its worker and message box. The compact **Workers** dropdown searches the current floor’s workers without occupying the bottom of the office. **Back** returns to the floor.
 
