@@ -194,13 +194,20 @@ Auto, Play and Pause stay aligned above their department status. Ready and verif
 The worker terminal fills its shared column, with the message box flush to the panel edges. Verified active helpers have small neon monitor pointers.
 
 
-### Version 0.1.26: quieter status and helper activity
+### Version 0.1.27: quieter status and helper activity
 
 Routine no-work notes are no longer displayed below department controls. Ready and the existing verified receipt details remain available. A saved receipt is historical, not a live task count or a claim that all project work is finished. Open Build plans for current progress. Source verification failures, pending requests and actual errors remain visible.
 
 Observed active helpers move between more work spots around their own room and pause to build holograms. A helper uses either its hologram or its small monitor pointer at a time. Its pointer scans its own monitor as the helper moves. These are visual assist routines for reported active helpers; they do not invent child agents, task results or model work.
 
 
-### Version 0.1.26: worker message configuration fix
+### Version 0.1.27: worker message configuration fix
 
 This update fixes a desktop-tool configuration error that could prevent a worker message from starting when no desktop viewer was connected. Desktop viewing and input still require their existing approvals. The update does not resend a failed message automatically. Copy any unsent draft before closing for the update, then review it before choosing Send again.
+
+
+### Version 0.1.27: recurring workers and cell activity
+
+Workers now shows a green Working count and an orange Recurring count. Recurring counts workers with enabled native recurring Codex tasks, not the number of jobs. The dropdown puts working workers first in green, then recurring workers in orange, then other workers. A worker that is both working and recurring appears once at the top with both badges. Paused schedules, one-off tasks and Rellva automatic queues do not add to the recurring count. Friends’ recurring indicators use shared status metadata when available; task names and prompts stay private.
+
+Hover over a cell to see its worker’s name and available current activity beside the pointer. Idle, waiting and unavailable states remain labelled honestly; a completed step is not presented as a running process. Friend floors use only activity already shared by that owner. The upper-right Tooltips On/Off button controls these labels. Tooltips start On; choosing Off hides them immediately, and your choice is saved on this computer.
