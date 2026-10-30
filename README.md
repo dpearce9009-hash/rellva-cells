@@ -45,7 +45,7 @@ Choose **Add coordinator**, enter its name and its new **Section name**, and opt
 - **Pause queue after task:** prevent more automated tasks for that worker after the current task finishes. **Stop worker** also interrupts work started in Rellva. **Tools → Pause all queues** and **Tools → Stop all tasks** apply across your workers; department controls show the affected worker count. Resuming permits work but does not start a queue.
 - **Teams:** choose a coordinator and its workers. Approving a suggested assignment adds a task; it does not run it.
 - **Project:** inspect progress and task details. For coordinators, the same view contains the goal, planning controls and proposed assignments. Approving an assignment adds a task; it does not start work.
-- **Files:** open the worker’s saved files. Verified finished files also appear as clickable deliveries in its room.
+- **Files:** open the worker’s saved files. A verified new file receives a brief clickable arrival effect in its room; historical files stay in Files.
 - **Monitor:** see available real command output, text or image previews. Previews and deliveries stay private to the owner.
 - **Requests:** click a room’s request indicator to open the exact pending approval or question. Supported commands, permissions and forms can be answered inside Rellva for work it runs. Unsupported forms, service sign-ins and Windows security dialogs still use their own controls. Viewing a request never approves it.
 
@@ -57,7 +57,7 @@ Draft messages and selected attachments stay with their worker while you switch 
 
 The terminal describes the current operation in plain English. Open **Commands & logs** on your own floor to inspect the original command and output. A finished test command is not a claim that its tests passed; errors remain visible in the conversation.
 
-The Workers menu contains the department/team filter, worker search and separate total/working counts. Settings includes a saved Dance floor effect switch for scheduled idle workers. Actual working rooms do not use that floor effect.
+The Workers menu contains the department/team filter, worker search and separate total/working counts. Settings includes a saved Dance floor effect switch for scheduled workers. It cycles tile outlines across every row and column while the worker uses ambient animations; tile centres stay dark. Actual working rooms do not use that floor effect.
 
 Idle office routines are visual animations. They do not run searches, complete project tasks, or spend model usage. Actual activity is indicated separately.
 
@@ -112,7 +112,7 @@ Desktop traffic is encrypted between the paired apps. The relay routes it, and o
 
 ## Usage & credits
 
-The top bar shows reported Codex usage limits as gauges and a separate OpenAI API balance indicator. Click it to open **Usage & credits** for reset times and activity. It reads available Codex allowance, reset, and token activity information from your existing local account connection. No additional setup is needed. Fields the account service does not provide are shown as unavailable.
+The top bar shows Usage left and a separate API balance. The usage meter uses the lowest remaining reported Codex allowance; allowance windows and reset times remain in the details. Click it to open **Usage & credits** for reset times and activity. It reads available Codex allowance, reset, and token activity information from your existing local account connection. No additional setup is needed. Fields the account service does not provide are shown as unavailable.
 
 API balance and API spending are currently **Unavailable** in the app. **Open API balance** and **Open API spending** open the account’s billing pages. An unavailable API balance is never treated as zero.
 
