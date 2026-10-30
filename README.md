@@ -65,6 +65,28 @@ Scheduled Codex tasks appear in the owning worker’s terminal with their enable
 
 Small helper bots appear when the local runtime reports active child agents. Up to six are shown; an unknown or unavailable count does not create pretend helpers.
 
+## Build plan accuracy
+
+**Settings → Build plans** connects a coordinator to a local plan feed. Choose the coordinator and its current plan pointer. If its evidence is stored elsewhere, use **Add evidence folder** to select that folder. **View plan** opens the verified text in Rellva.
+
+While Rellva is open, connected plans are checked every hour and after a task finishes. **Refresh now** checks immediately. Unchanged tasks keep their IDs and history; changed revisions appear for review. Paused, stale or unavailable sources are shown clearly. Disconnecting removes the connection and keeps task history.
+
+Imported tasks show the build plan’s progress separately from the worker’s local execution result. Finishing a worker run does not claim independent review or coordinator adoption. **Use revision** releases an eligible revised task for your review; **Run** starts it separately. Rellva checks the current owner, exact task revision, dependencies, holds and execution authority again before sending work. An uncertain previous run is held for reconciliation instead of being sent twice.
+
+Hourly checks read the connected plan and merge changed tasks. They do not spend model usage generating a new list or start work automatically. The plan producer must keep its current pointer and evidence updated. Existing manual task generation and finite automatic queues remain available.
+
+A source can provide an advisory ledger of known submissions and reviews without runnable tasks. Rellva labels that limit, shows its verified plan text, and preserves unknown owners and missing dependencies. It does not turn readiness goals or old review records into new worker assignments.
+
+## Department Play and Pause
+
+Beside each department’s **Auto** toggle, **Play** asks its coordinator to continue that department’s authorized unfinished work. **Pause** addresses only the exact non-recurring attempts running in that department when clicked. Recurring work, schedules, later attempts and other departments remain unchanged. The Auto toggle remains a separate control for finite project queues.
+
+Each department has independent request and observed status. A queued message waits for its coordinator to receive it; delivery is not a claim that work started or stopped. Its buttons wait for that request to be resolved before sending another; other departments stay independent. Rellva shows confirmed results only after the matching coordinator receipt. If all selected attempts were protected or already finished, it reports that the selection was checked. Unavailable receivers and uncertain outcomes remain visible and are not silently replayed.
+
+Workers and miniature helpers use softly pulsing neon blobs. Their monitor lasers, crowns, holograms, arrival effects and work routines remain in place.
+
+The installer includes the complete official Windows Codex control runtime and its license notices. It starts a local shared helper only for an explicit process command, reusing an existing compatible helper. Each person continues to use their own Codex account. Source archives omit the large binary directory; the included runtime source note and integrity receipt identify the exact official package needed to rebuild it.
+
 ## Work levels
 
 Each room's XP bar sits directly below its monitor, above the floor.
