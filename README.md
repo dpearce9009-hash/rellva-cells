@@ -1,10 +1,10 @@
-<img src="docs/rellva-office.svg" alt="Rellva Cells" width="96" height="96">
+<img src="docs/rellva-office.svg" alt="RellvaCells" width="96" height="96">
 
-# Rellva Cells
+# RellvaCells
 
 Previously named Rellva Office. The update keeps the existing installation, workers and private settings.
 
-Rellva Cells is a Windows app for managing local Codex chats, projects, and shared office floors. Each person uses their own account and controls their own workers.
+RellvaCells is a Windows app for managing local Codex chats, projects, and shared office floors. Each person uses their own account and controls their own workers.
 
 - Message workers, manage project tasks, and assign coordinators.
 - View your workers in a 3D office and visit friends’ shared floors.
@@ -17,8 +17,8 @@ Rellva Cells is a Windows app for managing local Codex chats, projects, and shar
 ### First installation
 
 1. **Use your own signed-in OpenAI desktop app.** If you already have it, keep it and select **Codex** in the product selector, then **This computer / Local** for local project chats. An existing signed-in Codex desktop installation also works. If needed, follow [OpenAI’s Windows setup guide](https://learn.chatgpt.com/docs/app/windows).
-2. **Download and run [Rellva-Cells-Setup.exe](https://github.com/dpearce9009-hash/rellva-cells/releases/latest/download/Rellva-Cells-Setup.exe).** On the [release page](https://github.com/dpearce9009-hash/rellva-cells/releases/latest), expand **Assets** and choose that filename. If you received **Rellva-Cells-Friends.zip**, right-click it, choose **Extract All**, and run the installer inside. The installer installs for your Windows user and creates a shortcut. You do not need an existing Rellva installation or to close OpenAI’s app to install Rellva. This preview is unsigned; if SmartScreen appears, check that the file came from this repository before choosing **More info → Run anyway**.
-3. **Open Rellva Cells from Start.** The connection indicator should read **Local Codex · saved chats**. If it says **Offline** or **Connection unavailable**, finish signing in to Codex in OpenAI’s desktop app, then choose **Settings → Refresh connection** in Rellva.
+2. **Download and run [RellvaCells-Setup.exe](https://github.com/dpearce9009-hash/rellva-cells/releases/latest/download/RellvaCells-Setup.exe).** On the [release page](https://github.com/dpearce9009-hash/rellva-cells/releases/latest), expand **Assets** and choose that filename. If you received **RellvaCells-Friends.zip**, right-click it, choose **Extract All**, and run the installer inside. The installer installs for your Windows user and creates a shortcut. You do not need an existing Rellva installation or to close OpenAI’s app to install Rellva. This preview is unsigned; if SmartScreen appears, check that the file came from this repository before choosing **More info → Run anyway**.
+3. **Open RellvaCells from Start.** The connection indicator should read **Local Codex · saved chats**. If it says **Offline** or **Connection unavailable**, finish signing in to Codex in OpenAI’s desktop app, then choose **Settings → Refresh connection** in Rellva.
 
 The first-launch **Connect this PC** prompt is optional desktop viewing. Choose **Not now** to start with just your office, or connect later under **Settings → Desktops**. This prompt does not set up workers or grant keyboard/mouse input.
 
@@ -37,14 +37,14 @@ Discovery itself does not start project tasks. Your friend gets their own worker
 
 ### Update an existing installation
 
-Only if Rellva Cells is already installed: finish its current work, close **Rellva Cells**, run the new installer and reopen it from Start. Your workers and settings are retained.
+Only if RellvaCells is already installed: finish its current work, close **RellvaCells**, run the new installer and reopen it from Start. Your workers and settings are retained.
 
 Use **Floors** at the top to choose your own or a connected friend’s floor. **Tools** contains reviews, worker exchange, usage and worker controls. **Settings**, beside Tools, contains appearance, desktop connections, sharing, permissions and updates. The top usage summary opens Usage & credits.
 
 ## Join a friend’s office
 
 1. Ask the owner for their **private office invitation**. It is sent separately and is not included in the public download.
-2. Open the invitation in your browser and choose **Open Rellva Cells**. Allow your browser to open the app if asked.
+2. Open the invitation in your browser and choose **Open RellvaCells**. Allow your browser to open the app if asked.
 3. In Rellva, choose **Join office**. Select a connected person’s floor to view their workers.
 
 If the link does not open the app, choose **Settings → Join a room**. Paste the **entire invitation**, including everything after `#`, into **Room address**. Leave **Private token** blank when the invitation already includes it, then choose **Join office**.
@@ -152,7 +152,7 @@ Opening a viewer alone grants no input access. Watching a shared office floor gr
 
 ### Pair another PC
 
-Both PCs need Rellva Cells open and must join the **same private office**. Pairing is optional and uses a separate private invitation.
+Both PCs need RellvaCells open and must join the **same private office**. Pairing is optional and uses a separate private invitation.
 
 1. On the PC being shared, open **Settings → Desktops**. Enter a PC name under **Share this PC**, then choose **Share this PC**.
 2. In its new pairing row, choose **Copy pairing**. Send that private invitation to the other PC’s owner.
