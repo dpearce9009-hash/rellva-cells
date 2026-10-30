@@ -186,3 +186,9 @@ The installed app checks for updates. You can also choose **Settings → Check f
 ### Avatar visibility
 
 Workers and helpers have clearer neon bodies that stand out over floor lighting and holograms. The computer-focus ring is a dim, narrow floor accent beneath the worker.
+
+### Department status and charging
+
+Auto, Play and Pause stay aligned above their department status. A confirmed idle department can show “No unfinished work to start.” as a normal note; source verification failures and request errors still need attention. Charging uses a clearer, slow nucleus glow in overview and focused rooms, with a still appearance under reduced motion.
+
+The worker terminal fills its shared column, with the message box flush to the panel edges. Verified active helpers have small neon monitor pointers.
