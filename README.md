@@ -83,7 +83,7 @@ Rellva renders the conversation content provided by the native interface; it is 
 
 A newly observed successful live process gives its worker a brief, cute completion effect. Repeated updates for the same process do not replay it, and opening old history does not trigger celebrations. Failed or unfinished processes do not trigger it. Reduced motion uses a still confirmation without the bounce or sparks; the effect does not claim that a whole project is complete.
 
-The Workers menu contains the department/team filter, worker search and separate total/working counts. Settings includes the saved Scheduled tasks animation effect dropdown: Rainbow tiles, Orbiting light or Off. Rainbow tiles cycles colored outlines across the whole floor while tile centres stay dark. Orbiting light uses one light around the worker with a bright light-blue office outline and a dark floor. These effects are for scheduled workers while idle; actual work keeps its working animation. Existing On/Off preferences carry over.
+The Workers menu contains the department/team filter, worker search and separate total/working counts. Settings includes the saved Scheduled tasks animation effect dropdown: Rainbow tiles, Orbiting light or Off. Rainbow tiles cycles colored outlines across the whole floor while tile centres stay dark. Orbiting light is the default: one light travels along the cell outline, with a bright light-blue border and a dark floor. These effects are for scheduled cells while not actively working. Actual work keeps its three moving outline lights. Saved Rainbow tiles and Off choices are preserved; previously enabled settings without a chosen mode use Orbiting light.
 
 Idle office routines are visual animations. They do not run searches, complete project tasks, or spend model usage. Actual activity is indicated separately.
 
@@ -115,7 +115,9 @@ Each department has independent request and observed status. A queued message wa
 
 If the current build plan cannot be verified, Play and Pause stay unavailable for new commands. The last matching, verified command receipt remains visible, including a confirmed **Ready** result when no eligible unfinished work was available. **Check again** rereads status without sending another command; **Build plans** opens the source settings. A changed evidence hash must be corrected and published by the plan producer. An earlier receipt does not authorize new work or silently replay an uncertain request.
 
-Workers appear as luminous nuclei. Observed active subagents appear as smaller glowing proton-like helper particles. Lasers, crowns, holograms, arrival effects and work routines remain. Actual working rooms retain three small moving perimeter lights; the optional scheduled Orbiting light is a separate single blue orb around an idle worker.
+Workers appear as luminous nuclei. Observed active subagents appear as smaller glowing proton-like helper particles, with their established routines unchanged. Lasers, crowns, holograms and arrival effects remain. Actual working rooms use three moving perimeter lights; scheduled Orbiting light uses one light with the same style along the cell border while the cell is not actively working.
+
+During an idle charging visit, a thin cable connects the nucleus to the existing left-wall outlet and the nucleus glows softly and slowly. This is visible in both the overview and focused room. Reduced motion keeps the charging effect still.
 
 The installer includes the complete official Windows Codex control runtime and its license notices. It starts a local shared helper only for an explicit process command, reusing an existing compatible helper. Each person continues to use their own Codex account. Source archives omit the large binary directory; the included runtime source note and integrity receipt identify the exact official package needed to rebuild it.
 
