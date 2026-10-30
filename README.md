@@ -148,3 +148,7 @@ The installed app checks for updates. You can also choose **Settings → Check f
 
 
 **Settings → Usage safeguard:** choose Off or 0%, 25%, 50%, 75% or 100% allowance remaining. Rellva stops its automatic planning, queues and running automatic tasks at or below the threshold reported by Codex. It also stops automatic work if limits cannot be checked. Manual work remains available. Stopped queues require an explicit restart; native Codex schedules are unchanged. Reported limits can lag.
+
+### Avatar visibility
+
+Workers and helpers have clearer neon bodies that stand out over floor lighting and holograms. The computer-focus ring is a dim, narrow floor accent beneath the worker.
