@@ -189,6 +189,13 @@ Workers and helpers have clearer neon bodies that stand out over floor lighting 
 
 ### Department status and charging
 
-Auto, Play and Pause stay aligned above their department status. A confirmed idle department can show “No unfinished work to start.” as a normal note; source verification failures and request errors still need attention. Charging uses a clearer, slow nucleus glow in overview and focused rooms, with a still appearance under reduced motion.
+Auto, Play and Pause stay aligned above their department status. Ready and verified receipt details remain available without a routine no-work note; source verification failures and request errors still need attention. Charging uses a clearer, slow nucleus glow in overview and focused rooms, with a still appearance under reduced motion.
 
 The worker terminal fills its shared column, with the message box flush to the panel edges. Verified active helpers have small neon monitor pointers.
+
+
+### Version 0.1.25: quieter status and helper activity
+
+Routine no-work notes are no longer displayed below department controls. Ready and the existing verified receipt details remain available. A saved receipt is historical, not a live task count or a claim that all project work is finished. Open Build plans for current progress. Source verification failures, pending requests and actual errors remain visible.
+
+Observed active helpers move between more work spots around their own room and pause to build holograms. A helper uses either its hologram or its small monitor pointer at a time. Its pointer scans its own monitor as the helper moves. These are visual assist routines for reported active helpers; they do not invent child agents, task results or model work.
