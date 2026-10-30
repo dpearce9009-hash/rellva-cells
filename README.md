@@ -39,16 +39,17 @@ Keep Rellva open while sharing your floor. Keep the invitation private; anyone w
 
 Coordinators and each department have their own office light-rail network, connected by a shared hallway rail for messages between sections.
 
-Choose **Add worker** to use a saved chat or create a worker and select its project folder. Select a room to open its worker and message box. The compact **Workers** dropdown searches the current floor’s workers without occupying the bottom of the office. **Back** returns to the floor.
+Choose **Add worker**, enter a name, select a department and coordinator, then choose a working folder. Rellva creates a native local Codex chat, places it in the selected coordinator’s section, and, when a coordinator is selected, sends a private introduction in both chats. Choose no coordinator to create an independent worker. If section placement cannot be verified, setup remains unfinished. If a coordinator is busy or a setup step fails, **Retry setup** continues the same chat; it does not create another. Unconfirmed native operations are held for inspection. You can also add a saved chat. Select a room for its terminal; **Workers** searches the floor and **Back** returns to it.
 
 - **Tasks:** generate a plan, review proposed tasks, and use **Run** for manual tasks. Automatic queues need an explicit **Start auto** and a task limit.
 - **Pause queue after task:** prevent more automated tasks for that worker after the current task finishes. **Stop worker** also interrupts work started in Rellva. **Tools → Pause all queues** and **Tools → Stop all tasks** apply across your workers; department controls show the affected worker count. Resuming permits work but does not start a queue.
 - **Teams:** choose a coordinator and its workers. Approving a suggested assignment adds a task; it does not run it.
-- **Project / Files:** inspect project progress and the worker’s saved files.
+- **Project:** inspect progress and task details. For coordinators, the same view contains the goal, planning controls and proposed assignments. Approving an assignment adds a task; it does not start work.
+- **Files:** open the worker’s saved files.
 
 **Rellva Auto** and **Digital Auto** beside the Office filters generate and run eligible project tasks in finite batches using each worker’s existing task limit. Workers without a goal, already busy, or waiting for input are skipped. Turning a switch **Off** prevents new auto tasks after the current task finishes. These switches do not change Codex schedules and appear only on your own floor.
 
-On the floor, **Show tasks** opens a read-only overview of all workers. Use **Search workers or tasks** and switch between **Plan** and **Project tasks** to inspect current, done and remaining steps. Formal recent Codex plans appear when available; otherwise the pane says the plan is unavailable and still shows saved Rellva project tasks. Select a worker to open its direct terminal.
+On the floor, **Show processes** displays each worker’s current process and recorded process history. Search workers or processes; use **Older** and **Newer** for history pages and **Details** for the original command or tool name. Completed, failed and unknown states remain separate. Project-generated tasks stay inside each worker’s **Tasks** tab. Select a worker to open its direct terminal.
 
 Draft messages and selected attachments stay with their worker while you switch rooms in the app. **Load older messages** retrieves more saved history. During a task started in Rellva, **Send update** adds instructions to that same running task and pauses any next automatic task; it does not start another turn. Answer pending approval first.
 
