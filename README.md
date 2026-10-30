@@ -12,16 +12,32 @@ Rellva Office is a Windows app for managing local Codex chats, projects, and sha
 
 ## Install on Windows
 
-1. **Install OpenAI’s desktop app and sign in with your own ChatGPT account.** Use the [official Windows guide](https://learn.chatgpt.com/docs/app/windows). Choose **Codex** for project chats; an existing signed-in Codex desktop installation can be used. [Official setup instructions](https://learn.chatgpt.com/docs/quickstart?setup=app).
-2. **Download [Rellva-Office-Setup.exe](https://github.com/dpearce9009-hash/rellva-office/releases/latest/download/Rellva-Office-Setup.exe).** On the [release page](https://github.com/dpearce9009-hash/rellva-office/releases/latest), expand **Assets** and choose that filename. If you received **Rellva-Office-Friends.zip**, right-click it, choose **Extract All**, and open the extracted folder.
-3. Finish current Rellva tasks and close Rellva before updating. Open **Rellva-Office-Setup.exe**; the installer installs for your Windows user and creates a shortcut. This preview is unsigned. If SmartScreen appears, confirm the file came from this repository before choosing **More info → Run anyway**.
-4. Open **Rellva Office** from the Start menu. The connection indicator should read **Local Codex · saved chats**. If it says **Offline** or **Connection unavailable**, finish signing in to OpenAI’s desktop app, then choose **Settings → Refresh connection** in Rellva.
+### First installation
 
-On first launch, choose **Connect this PC** to approve local desktop viewing, or **Not now** to skip it. You can connect later under **Settings → Desktops**. This grants no keyboard/mouse input or worker assignment.
+1. **Use your own signed-in OpenAI desktop app.** If you already have it, keep it and select **Codex** in the product selector, then **This computer / Local** for local project chats. An existing signed-in Codex desktop installation also works. If needed, follow [OpenAI’s Windows setup guide](https://learn.chatgpt.com/docs/app/windows).
+2. **Download and run [Rellva-Office-Setup.exe](https://github.com/dpearce9009-hash/rellva-office/releases/latest/download/Rellva-Office-Setup.exe).** On the [release page](https://github.com/dpearce9009-hash/rellva-office/releases/latest), expand **Assets** and choose that filename. If you received **Rellva-Office-Friends.zip**, right-click it, choose **Extract All**, and run the installer inside. The installer installs for your Windows user and creates a shortcut. You do not need an existing Rellva installation or to close OpenAI’s app to install Rellva. This preview is unsigned; if SmartScreen appears, check that the file came from this repository before choosing **More info → Run anyway**.
+3. **Open Rellva Office from Start.** The connection indicator should read **Local Codex · saved chats**. If it says **Offline** or **Connection unavailable**, finish signing in to Codex in OpenAI’s desktop app, then choose **Settings → Refresh connection** in Rellva.
 
-The installer needs no separate API key. Each friend uses their own Codex sign-in and usage allowance.
+The first-launch **Connect this PC** prompt is optional desktop viewing. Choose **Not now** to start with just your office, or connect later under **Settings → Desktops**. This prompt does not set up workers or grant keyboard/mouse input.
 
-Use **Floors** at the top to choose your own or a connected friend’s floor. Use **Tools** for reviews, worker exchange, usage and worker controls. Use **Settings**, beside Tools, for appearance, desktop connections, sharing, permissions and updates. The top usage summary opens the detailed Usage & credits view.
+No separate API key is needed. Each person uses their own Codex account and usage allowance. The current OpenAI desktop app includes a Codex product selector; ordinary ChatGPT **Chat / Work** histories are a different source and are not imported by Rellva. [OpenAI’s desktop guide](https://learn.chatgpt.com/docs/app).
+
+### Set up your workers once
+
+Rellva automatically discovers **local Codex chats** and uses available native section names as department labels. It first shows chats already added to Rellva or in a section containing “Rellva”; if none match, it shows up to 36 recent top-level chats. A missing saved chat can be added through **Add worker → saved chats**.
+
+**Coordinator/team relationships need one-time confirmation.** A native section or a chat named “HQ” does not establish a team automatically.
+
+- **Use existing chats:** open **Teams**, choose the coordinator and its workers, enter a team name, then save. Saving this relationship does not send an introduction or start project work.
+- **Start a new team:** choose **Add coordinator**, give it a name, section, responsibilities and project folder. Then use **Add worker** and select that coordinator. Rellva creates and places the native chats and sends the setup brief/introduction after you confirm setup. Those model messages can use your Codex allowance.
+
+Discovery itself does not start project tasks. Your friend gets their own workers and settings; installing or joining your office does not copy your chats, coordinators or private setup. Advanced build-plan feeds and department Play/Pause receivers require their own setup, described below.
+
+### Update an existing installation
+
+Only if Rellva Office is already installed: finish its current work, close **Rellva Office**, run the new installer and reopen it from Start. Your workers and settings are retained.
+
+Use **Floors** at the top to choose your own or a connected friend’s floor. **Tools** contains reviews, worker exchange, usage and worker controls. **Settings**, beside Tools, contains appearance, desktop connections, sharing, permissions and updates. The top usage summary opens Usage & credits.
 
 ## Join a friend’s office
 
@@ -49,7 +65,7 @@ Choose **Add coordinator**, enter its name and its new **Section name**, and opt
 - **Monitor:** see available real command output, text or image previews. Previews and deliveries stay private to the owner.
 - **Requests:** click a room’s request indicator to open the exact pending approval or question. Supported commands, permissions and forms can be answered inside Rellva for work it runs. Unsupported forms, service sign-ins and Windows security dialogs still use their own controls. Viewing a request never approves it.
 
-**Rellva Auto** and **Digital Auto** beside the Office filters generate and run eligible project tasks in finite batches using each worker’s existing task limit. Workers without a goal, already busy, or waiting for input are skipped. Turning a switch **Off** prevents new auto tasks after the current task finishes. These switches do not change Codex schedules and appear only on your own floor.
+The **Rellva Auto** and **Digital Auto** switches beside the Office filters apply to departments named **Rellva** and **Rellva Digital**. They generate and run eligible project tasks in finite batches using each worker’s existing task limit. Workers without a goal, already busy, or waiting for input are skipped. Turning a switch **Off** prevents new auto tasks after the current task finishes. These switches do not change Codex schedules and appear only on your own floor.
 
 On the floor, **Show processes** opens one live feed across your workers: each active worker’s current activity and any running command or tool step. Search or filter the feed. Use Commands & logs for original details; Close or Escape returns to the feed. Activity shows the three newest finished processes, including reported failures. It rolls forward as work finishes, without scrolling or growing the page. Generated project tasks remain in each worker’s Tasks tab. Select a worker to chat directly.
 
@@ -67,6 +83,8 @@ Small helper bots appear when the local runtime reports active child agents. Up 
 
 ## Build plan accuracy
 
+Each person must connect their own plan source; installing Rellva or joining an office does not supply the example office’s plan feed.
+
 **Settings → Build plans** connects a coordinator to a local plan feed. Choose the coordinator and its current plan pointer. If its evidence is stored elsewhere, use **Add evidence folder** to select that folder. **View plan** opens the verified text in Rellva.
 
 While Rellva is open, connected plans are checked every hour and after a task finishes. **Refresh now** checks immediately. Unchanged tasks keep their IDs and history; changed revisions appear for review. Paused, stale or unavailable sources are shown clearly. Disconnecting removes the connection and keeps task history.
@@ -78,6 +96,8 @@ Hourly checks read the connected plan and merge changed tasks. They do not spend
 A source can provide an advisory ledger of known submissions and reviews without runnable tasks. Rellva labels that limit, shows its verified plan text, and preserves unknown owners and missing dependencies. It does not turn readiness goals or old review records into new worker assignments.
 
 ## Department Play and Pause
+
+Each department needs its own verified coordinator receiver. A fresh installation does not include the example office’s receiver configuration; unavailable receivers are shown as unavailable.
 
 Beside each department’s **Auto** toggle, **Play** asks its coordinator to continue that department’s authorized unfinished work. **Pause** addresses only the exact non-recurring attempts running in that department when clicked. Recurring work, schedules, later attempts and other departments remain unchanged. The Auto toggle remains a separate control for finite project queues.
 
