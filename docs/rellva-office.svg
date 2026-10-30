@@ -1,4 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" fill="none" role="img" aria-labelledby="rellva-cells-logo-title">
+  <title id="rellva-cells-logo-title">Rellva Cells</title>
   <rect x="8" y="8" width="496" height="496" rx="108" fill="#06111D"/>
   <rect x="10" y="10" width="492" height="492" rx="106" stroke="#234354" stroke-width="4"/>
   <path d="M256 100V150" stroke="#72FFF0" stroke-width="20" stroke-linecap="round"/>

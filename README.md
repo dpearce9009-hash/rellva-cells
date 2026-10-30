@@ -1,8 +1,10 @@
-<img src="docs/rellva-office.svg" alt="Rellva Office" width="96" height="96">
+<img src="docs/rellva-office.svg" alt="Rellva Cells" width="96" height="96">
 
-# Rellva Office
+# Rellva Cells
 
-Rellva Office is a Windows app for managing local Codex chats, projects, and shared office floors. Each person uses their own account and controls their own workers.
+Previously named Rellva Office. The update keeps the existing installation, workers and private settings.
+
+Rellva Cells is a Windows app for managing local Codex chats, projects, and shared office floors. Each person uses their own account and controls their own workers.
 
 - Message workers, manage project tasks, and assign coordinators.
 - View your workers in a 3D office and visit friends’ shared floors.
@@ -15,8 +17,8 @@ Rellva Office is a Windows app for managing local Codex chats, projects, and sha
 ### First installation
 
 1. **Use your own signed-in OpenAI desktop app.** If you already have it, keep it and select **Codex** in the product selector, then **This computer / Local** for local project chats. An existing signed-in Codex desktop installation also works. If needed, follow [OpenAI’s Windows setup guide](https://learn.chatgpt.com/docs/app/windows).
-2. **Download and run [Rellva-Office-Setup.exe](https://github.com/dpearce9009-hash/rellva-office/releases/latest/download/Rellva-Office-Setup.exe).** On the [release page](https://github.com/dpearce9009-hash/rellva-office/releases/latest), expand **Assets** and choose that filename. If you received **Rellva-Office-Friends.zip**, right-click it, choose **Extract All**, and run the installer inside. The installer installs for your Windows user and creates a shortcut. You do not need an existing Rellva installation or to close OpenAI’s app to install Rellva. This preview is unsigned; if SmartScreen appears, check that the file came from this repository before choosing **More info → Run anyway**.
-3. **Open Rellva Office from Start.** The connection indicator should read **Local Codex · saved chats**. If it says **Offline** or **Connection unavailable**, finish signing in to Codex in OpenAI’s desktop app, then choose **Settings → Refresh connection** in Rellva.
+2. **Download and run [Rellva-Cells-Setup.exe](https://github.com/dpearce9009-hash/rellva-cells/releases/latest/download/Rellva-Cells-Setup.exe).** On the [release page](https://github.com/dpearce9009-hash/rellva-cells/releases/latest), expand **Assets** and choose that filename. If you received **Rellva-Cells-Friends.zip**, right-click it, choose **Extract All**, and run the installer inside. The installer installs for your Windows user and creates a shortcut. You do not need an existing Rellva installation or to close OpenAI’s app to install Rellva. This preview is unsigned; if SmartScreen appears, check that the file came from this repository before choosing **More info → Run anyway**.
+3. **Open Rellva Cells from Start.** The connection indicator should read **Local Codex · saved chats**. If it says **Offline** or **Connection unavailable**, finish signing in to Codex in OpenAI’s desktop app, then choose **Settings → Refresh connection** in Rellva.
 
 The first-launch **Connect this PC** prompt is optional desktop viewing. Choose **Not now** to start with just your office, or connect later under **Settings → Desktops**. This prompt does not set up workers or grant keyboard/mouse input.
 
@@ -35,14 +37,14 @@ Discovery itself does not start project tasks. Your friend gets their own worker
 
 ### Update an existing installation
 
-Only if Rellva Office is already installed: finish its current work, close **Rellva Office**, run the new installer and reopen it from Start. Your workers and settings are retained.
+Only if Rellva Cells is already installed: finish its current work, close **Rellva Cells**, run the new installer and reopen it from Start. Your workers and settings are retained.
 
 Use **Floors** at the top to choose your own or a connected friend’s floor. **Tools** contains reviews, worker exchange, usage and worker controls. **Settings**, beside Tools, contains appearance, desktop connections, sharing, permissions and updates. The top usage summary opens Usage & credits.
 
 ## Join a friend’s office
 
 1. Ask the owner for their **private office invitation**. It is sent separately and is not included in the public download.
-2. Open the invitation in your browser and choose **Open Rellva Office**. Allow your browser to open the app if asked.
+2. Open the invitation in your browser and choose **Open Rellva Cells**. Allow your browser to open the app if asked.
 3. In Rellva, choose **Join office**. Select a connected person’s floor to view their workers.
 
 If the link does not open the app, choose **Settings → Join a room**. Paste the **entire invitation**, including everything after `#`, into **Room address**. Leave **Private token** blank when the invitation already includes it, then choose **Join office**.
@@ -69,11 +71,19 @@ The **Rellva Auto** and **Digital Auto** switches beside the Office filters appl
 
 On the floor, **Show processes** opens one live feed across your workers: each active worker’s current activity and any running command or tool step. Search or filter the feed. Use Commands & logs for original details; Close or Escape returns to the feed. Activity shows the three newest finished processes, including reported failures. It rolls forward as work finishes, without scrolling or growing the page. Generated project tasks remain in each worker’s Tasks tab. Select a worker to chat directly.
 
-Draft messages and selected attachments stay with their worker while you switch rooms in the app. **Load older messages** retrieves more saved history. During a task started in Rellva, **Send update** adds instructions to that same running task and pauses any next automatic task; it does not start another turn. Answer pending approval first.
+### Worker terminal
 
-The terminal describes the current operation in plain English. Open **Commands & logs** on your own floor to inspect the original command and output. A finished test command is not a claim that its tests passed; errors remain visible in the conversation.
+The message box stays visible while the conversation scrolls inside its own bounded window. User messages and worker replies use readable headings, lists, links and code blocks. Process steps are grouped in collapsible sections; open **Commands & logs** for their original commands, outputs and errors. **Copy** copies a message, and **Copy code** copies a code block. A finished test command alone is not a claim that its tests passed.
 
-The Workers menu contains the department/team filter, worker search and separate total/working counts. Settings includes a saved Dance floor effect switch for scheduled workers. It cycles tile outlines across every row and column while the worker uses ambient animations; tile centres stay dark. Actual working rooms do not use that floor effect.
+Local image previews load as they enter the visible conversation. Click file links or **Open image** to open available referenced files; external images remain links until opened. Files are checked on the owner’s computer, and unavailable references are labelled. Chat content and these previews are not shared with friends.
+
+Draft messages and selected attachments stay with their worker while you switch rooms in the app. **Load older messages** adds earlier saved history without losing your reading position. The selected local chat refreshes recent readable history without resuming it or starting a model turn. During a task started in Rellva, **Send update** adds instructions to that same running task and pauses any next automatic task; it does not start another turn. Answer pending approval first.
+
+Rellva renders the conversation content provided by the native interface; it is not a pixel-for-pixel copy of the Codex app. Historical approvals and questions appear only when the native history provides them. Active approvals can be answered only when their request is available to this connection. Unsupported forms, service sign-ins and Windows security dialogs use their native or service controls. A task owned by another active app cannot be steered here; read-only history access does not take ownership.
+
+A newly observed successful live process gives its worker a brief, cute completion effect. Repeated updates for the same process do not replay it, and opening old history does not trigger celebrations. Failed or unfinished processes do not trigger it. Reduced motion uses a still confirmation without the bounce or sparks; the effect does not claim that a whole project is complete.
+
+The Workers menu contains the department/team filter, worker search and separate total/working counts. Settings includes the saved Scheduled tasks animation effect dropdown: Rainbow tiles, Orbiting light or Off. Rainbow tiles cycles colored outlines across the whole floor while tile centres stay dark. Orbiting light uses one light around the worker with a bright light-blue office outline and a dark floor. These effects are for scheduled workers while idle; actual work keeps its working animation. Existing On/Off preferences carry over.
 
 Idle office routines are visual animations. They do not run searches, complete project tasks, or spend model usage. Actual activity is indicated separately.
 
@@ -103,7 +113,9 @@ Beside each department’s **Auto** toggle, **Play** asks its coordinator to con
 
 Each department has independent request and observed status. A queued message waits for its coordinator to receive it; delivery is not a claim that work started or stopped. Its buttons wait for that request to be resolved before sending another; other departments stay independent. Rellva shows confirmed results only after the matching coordinator receipt. If all selected attempts were protected or already finished, it reports that the selection was checked. Unavailable receivers and uncertain outcomes remain visible and are not silently replayed.
 
-Workers and miniature helpers use softly pulsing neon blobs. Their monitor lasers, crowns, holograms, arrival effects and work routines remain in place.
+If the current build plan cannot be verified, Play and Pause stay unavailable for new commands. The last matching, verified command receipt remains visible, including a confirmed **Ready** result when no eligible unfinished work was available. **Check again** rereads status without sending another command; **Build plans** opens the source settings. A changed evidence hash must be corrected and published by the plan producer. An earlier receipt does not authorize new work or silently replay an uncertain request.
+
+Workers appear as luminous nuclei. Observed active subagents appear as smaller glowing proton-like helper particles. Lasers, crowns, holograms, arrival effects and work routines remain. Actual working rooms retain three small moving perimeter lights; the optional scheduled Orbiting light is a separate single blue orb around an idle worker.
 
 The installer includes the complete official Windows Codex control runtime and its license notices. It starts a local shared helper only for an explicit process command, reusing an existing compatible helper. Each person continues to use their own Codex account. Source archives omit the large binary directory; the included runtime source note and integrity receipt identify the exact official package needed to rebuild it.
 
@@ -140,7 +152,7 @@ Opening a viewer alone grants no input access. Watching a shared office floor gr
 
 ### Pair another PC
 
-Both PCs need Rellva Office open and must join the **same private office**. Pairing is optional and uses a separate private invitation.
+Both PCs need Rellva Cells open and must join the **same private office**. Pairing is optional and uses a separate private invitation.
 
 1. On the PC being shared, open **Settings → Desktops**. Enter a PC name under **Share this PC**, then choose **Share this PC**.
 2. In its new pairing row, choose **Copy pairing**. Send that private invitation to the other PC’s owner.
